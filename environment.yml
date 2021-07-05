@@ -1,0 +1,8 @@
+name: stellar_ssw
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - sunpy>=3.0
+  - astroquery
+  - reproject
