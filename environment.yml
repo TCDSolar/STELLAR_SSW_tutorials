@@ -8,3 +8,4 @@ dependencies:
   - reproject
   - jupyterlab
   - ipywidgets
+  - git+https://github.com/samaloney/radiospectra.git
