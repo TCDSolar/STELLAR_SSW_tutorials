@@ -6,3 +6,5 @@ dependencies:
   - sunpy>=3.0
   - astroquery
   - reproject
+  - jupyterlab
+  - ipywidgets
