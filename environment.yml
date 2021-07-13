@@ -3,8 +3,11 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - pip
   - sunpy>=3.0
   - astroquery
   - reproject
   - jupyterlab
   - ipywidgets
+  - pip:
+    - git+https://github.com/samaloney/radiospectra
