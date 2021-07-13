@@ -26,31 +26,36 @@ If you have first forked it then you can run:
 
 - ```git clone  https://github.com/<username>/STELLAR_SSW_tutorials```
 
-
+You can also download these notebooks by clicking on green `code` button on the top right hand side, and then by clicking download zip. 
 
 
 #### 2. Create a conda environment
 
-We recommend creating a new conda environment and install the requried packages used in these notebooks. [Here](https://towardsdatascience.com/getting-started-with-python-environments-using-conda-32e9f2779307) is a nice introduction to anaconda environments for those new to the concept. [Here](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) is a conda cheatsheet which may help too! 
+We recommend creating a new conda environment and install the requried packages used in these notebooks. [Here](https://towardsdatascience.com/getting-started-with-python-environments-using-conda-32e9f2779307) is a nice introduction to anaconda environments for those new to the concept, and [here](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) is a conda cheatsheet which may help too! 
 
-The python packages required to run these workshop notebooks are listed in the `environment.yaml` file in this repository. To create a new environment with these packages installed you can open a terminal and type:
+The python packages required to run these workshop notebooks are listed in the `environment.yml` file in this repository. To create a new environment with these packages installed you can open a terminal and type:
 
 - ```conda env create -f environment.yml```
 
-This will then create a new conda environment called `stellar_ssw` (this name is listed in the `enviroment.yaml` file).
+This will then create a new conda environment called `stellar_ssw` (this name is listed in the `enviroment.yml` file).
 
 You can then activate this environment by typing:
 
 - ``` conda activate stellar_ssw```
 
-Note your prompt should change and now have ‘stellar_sww’ near the start. If you want to list all your conda environments you can type
+Note your prompt should change and now have `stellar_sww` near the start. If you want to list all your conda environments you can type
 ``` conda info -e```. You should see `base` which is your base enviroment, the `stellar_ssw` one, and any others you have created! 
 
-##### 2.2 Updating the environment.yaml file
-If an update is made to the `enviroment.yaml` file then you will need to type 
+##### 2.2 Updating the environment.yml file
+If an update is made to the `enviroment.yml` file then you will need to type 
 
 - ```conda env update --file environment.yml --prune```
 
+This may be important after you have down a `git pull` (see below 4.)
+
+##### 2.3 Installed new packages in this environment
+
+You can also install new packages in this environment by using `conda install <package>`or by using pip! (`pip install <package<`)
 
 ### 3. Start a jupyter notebook!
 
